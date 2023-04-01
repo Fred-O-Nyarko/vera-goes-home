@@ -21,7 +21,11 @@ function App() {
         width: "100vw",
       }}
     >
-      <PDFDocument file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+      <PDFDocument
+        file={pdf}
+        onLoadSuccess={onDocumentLoadSuccess}
+        loading="Loading... Please wait"
+      >
         {Array.from(new Array(numPages), (el, index) => (
           <Page key={`page_${index + 1}`} pageNumber={index + 1} />
         ))}
