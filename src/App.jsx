@@ -18,7 +18,6 @@ function App() {
         display: "flex",
         justifyContent: "center",
         height: "100vh",
-        width: "100vw",
       }}
     >
       <PDFDocument
